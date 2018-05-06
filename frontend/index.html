@@ -8,6 +8,8 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css">
+
+
 </head>
 <body>
 
@@ -25,7 +27,7 @@
             <h5><img src="./assets/pump-icon.svg" class="header-icon" alt=""> Pump</h5>
 
             <div class="card-status">
-              <strong>ON</strong> for <span>05:48</span>
+              <strong id="pumpStatus">ON</strong>
             </div>
           </div>
         </div>
@@ -33,7 +35,7 @@
           <div class="card-box">
             <h5><img src="./assets/valve-icon.svg" class="header-icon" alt=""> Valve</h5>
             <div class="card-status">
-              <strong>OFF</strong> for <span>03:48</span>
+              <strong id="valveStatus">OFF</strong>
             </div>
           </div>
         </div>
@@ -41,7 +43,7 @@
           <div class="card-box">
             <h5><img src="./assets/growbed-icon.svg" class="header-icon" alt=""> Grow Bed</h5>
             <div class="card-status">
-              <strong>FILLED</strong> for <span>05:48</span>
+              <strong id="growbedStatus">FILLED</strong>
             </div>
           </div>
         </div>
@@ -51,22 +53,28 @@
         <div class="six columns">
           <div class="card-box">
             <h5><img src="./assets/temp-icon.svg" class="header-icon" alt=""> Temperature</h5>
+            <div class="temp-value">
+              <span id="tempValue">29</span>&#176;C
+            </div>
           </div>
         </div>
         <div class="six columns">
           <div class="card-box">
             <h5><img src="./assets/humidity-icon.svg" class="header-icon" alt=""> Humidity</h5>
+            <div class="hum-value">
+              <span id="humValue">89</span>%
+            </div>
           </div>
         </div>
       </div>
     </div>
   </main>
 
+<script src="./js/jquery-3.3.1.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script type="text/javascript" src="./js/main.js">
 
-
-
-
-
+</script>
 
 </body>
 </html>
