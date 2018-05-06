@@ -1,0 +1,41 @@
+body{
+  background: #f5f5f5;
+  font-family: 'Roboto', sans-serif;
+  color: #505458;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #57c5a5;
+  padding: 10px 15px;
+}
+
+.logo{
+  color: #fff;
+  font-weight: bold;
+}
+
+main{
+  padding-top: 80px;
+}
+
+.fluid-container{
+  padding: 0 15px;
+}
+
+.card-box{
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.header-icon{
+  height: 26px;
+  position: relative;
+  top: 4px;
+  margin-right: 5px;
+}
